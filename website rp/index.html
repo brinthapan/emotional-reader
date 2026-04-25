@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Storypal is an inclusive storytelling platform designed to support children with visual, hearing, and speech impairments through OCR, emotional TTS, sign language translation, and speech therapy tools."
+  >
+  <title>Storypal | Inclusive Storytelling Research Project</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <div class="floating-shapes" aria-hidden="true">
+      <span class="shape shape-star"></span>
+      <span class="shape shape-circle"></span>
+      <span class="shape shape-diamond"></span>
+      <span class="shape shape-pencil"></span>
+    </div>
+
+    <header class="site-header">
+      <nav class="nav">
+        <a class="brand" href="#home" aria-label="Storypal home">
+          <span class="brand-mark">SP</span>
+          <span class="brand-text">
+            <strong>Storypal</strong>
+            <small>Inclusive Storytelling</small>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links" id="nav-links">
+          <a href="#home">Home</a>
+          <a href="#domain">Domain</a>
+          <a href="#milestones">Milestones</a>
+          <a href="#documents">Documents & Slides</a>
+          <a href="#about">About Us</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">Research Project Website</p>
+          <h1>Storypal makes storybooks more accessible, expressive, and inclusive.</h1>
+          <p class="lead">
+            Storypal is a web-based research project focused on helping children with visual,
+            hearing, and speech impairments experience storybooks through text extraction,
+            emotional narration, sign language support, and speech assistance.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#domain">Explore the Research</a>
+            <a class="button button-secondary" href="#documents">View Project Files</a>
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <div class="storybook-stage" aria-label="Animated children reading a storybook">
+            <div class="sun"></div>
+            <div class="rainbow">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="book">
+              <div class="page page-left">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="page page-right">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="reader reader-left">
+              <span class="head"></span>
+              <span class="body"></span>
+            </div>
+            <div class="reader reader-right">
+              <span class="head"></span>
+              <span class="body"></span>
+            </div>
+            <div class="sparkle sparkle-one"></div>
+            <div class="sparkle sparkle-two"></div>
+            <div class="sparkle sparkle-three"></div>
+          </div>
+
+          <div class="hero-card accent-card">
+            <p class="card-label">Abstract</p>
+            <p>
+              This project combines OCR, emotion recognition, emotional text-to-speech, sign
+              language translation, and stuttering detection into one multimodal platform that
+              reduces access barriers in conventional children's storybooks.
+            </p>
+          </div>
+          <div class="hero-grid">
+            <article class="hero-card">
+              <p class="card-label">Inclusive Focus</p>
+              <h2>Visual, hearing, and speech accessibility in one platform.</h2>
+            </article>
+            <article class="hero-card">
+              <p class="card-label">Highlights</p>
+              <ul class="compact-list">
+                <li>Emotion-aware storytelling</li>
+                <li>ASL phrase translation</li>
+                <li>Speech therapy assistance</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="domain">
+        <div class="section-heading">
+          <p class="eyebrow">Domain</p>
+          <h2>Technical and academic foundation</h2>
+          <p>
+            The Storypal research domain combines accessibility design with machine learning,
+            language processing, and speech technologies to address a real educational gap.
+          </p>
+        </div>
+
+        <div class="cards two-column">
+          <article class="info-card feature-card">
+            <h3>Literature Survey</h3>
+            <p>
+              Existing work in OCR, image captioning, CNN-LSTM pipelines, and assistive reading
+              tools provides a strong baseline, but few solutions address children with multiple
+              impairments in a unified storytelling experience.
+            </p>
+          </article>
+
+          <article class="info-card feature-card">
+            <h3>Research Gap</h3>
+            <p>
+              Drop cap letter detection in storybooks remains limited, and there is still a lack
+              of integrated multimodal systems that combine audio narration, sign translation,
+              and speech therapy features in one workflow.
+            </p>
+          </article>
+
+          <article class="info-card feature-card">
+            <h3>Research Problem</h3>
+            <p>
+              Conventional storybooks are difficult to access for children with disabilities when
+              text is embedded in images, narration lacks emotional context, sign-based support is
+              missing, and speech-related interaction is not considered.
+            </p>
+          </article>
+
+          <article class="info-card feature-card">
+            <h3>Research Objectives</h3>
+            <ul>
+              <li>Extract text from illustrated storybooks</li>
+              <li>Recognize emotional tone using BERT</li>
+              <li>Generate emotional narration with Coqui XTTS</li>
+              <li>Translate content into sign language support</li>
+              <li>Detect stuttering patterns for speech assistance</li>
+            </ul>
+          </article>
+
+          <article class="info-card feature-card">
+            <h3>Methodology</h3>
+            <p>
+              Storypal integrates CRAFT for text region detection, BERT for emotion
+              classification, emotional speech synthesis pipelines, and Random Forest-based speech
+              analysis to build a complete assistive storytelling pipeline.
+            </p>
+          </article>
+
+          <article class="info-card feature-card">
+            <h3>Technologies Used</h3>
+            <p>
+              MERN stack components, Next.js, Python, VGG-16, Detectron2, and complementary AI
+              models are used to support the application interface, data handling, and model
+              inference layers.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="milestones">
+        <div class="section-heading">
+          <p class="eyebrow">Milestones</p>
+          <h2>Project timeline</h2>
+          <p>
+            The major phases are grouped into expandable milestones so visitors can scan the
+            research journey without reading everything at once.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <details class="milestone" open>
+            <summary>
+              <span>Project Proposal</span>
+              <small>Initial concept and sub-objective definition</small>
+            </summary>
+            <p>
+              The proposal phase established the Storypal concept, framed the problem space, and
+              divided the project into focused research objectives for implementation.
+            </p>
+          </details>
+
+          <details class="milestone">
+            <summary>
+              <span>Progress Presentation 1</span>
+              <small>OCR and emotion classification development</small>
+            </summary>
+            <p>
+              This stage covered early system progress, especially text extraction from storybooks
+              and emotion classification using BERT-based language processing models.
+            </p>
+          </details>
+
+          <details class="milestone">
+            <summary>
+              <span>Progress Presentation 2</span>
+              <small>TTS, sign language, and stuttering modules</small>
+            </summary>
+            <p>
+              The second progress review focused on emotional text-to-speech generation, sign
+              language translation support, and the implementation of the stuttering detection
+              pipeline.
+            </p>
+          </details>
+
+          <details class="milestone">
+            <summary>
+              <span>Final Assessment / Viva</span>
+              <small>Validation, benchmarking, and pilot testing</small>
+            </summary>
+            <p>
+              The final evaluation assessed overall system performance against benchmarks and pilot
+              test outcomes to validate Storypal as an inclusive storytelling solution.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section class="section" id="documents">
+        <div class="section-heading">
+          <p class="eyebrow">Documents & Slides</p>
+          <h2>Project resources</h2>
+          <p>
+            Add your official course files here. The current layout is ready for direct upload
+            links once the final documents and slide decks are available.
+          </p>
+        </div>
+
+        <div class="resource-layout">
+          <article class="resource-card">
+            <h3>Documents</h3>
+            <a href="#" aria-label="Project Charter link placeholder">Project Charter</a>
+            <a href="#" aria-label="Project Proposal link placeholder">Project Proposal</a>
+            <a href="#" aria-label="Research Final document link placeholder">Research_Final.docx</a>
+          </article>
+
+          <article class="resource-card">
+            <h3>Slides</h3>
+            <a href="#" aria-label="Proposal presentation slides placeholder">Proposal Presentation</a>
+            <a href="#" aria-label="Progress presentation one slides placeholder">Progress Presentation 1</a>
+            <a href="#" aria-label="Progress presentation two slides placeholder">Progress Presentation 2</a>
+          </article>
+
+          <article class="resource-card note-card">
+            <h3>Submission Note</h3>
+            <p>
+              Keep all final website assets lightweight so the packaged course submission stays
+              below the 20 MB upload limit.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">About Us</p>
+          <h2>Research team and achievements</h2>
+          <p>
+            Storypal is developed by a student research team with guidance from academic
+            supervisors and a strong focus on measurable accessibility outcomes.
+          </p>
+        </div>
+
+        <div class="cards team-grid">
+          <article class="team-card">
+            <div class="avatar">VR</div>
+            <h3>Vikesh Ramesh</h3>
+            <p>Student Researcher</p>
+            <a href="mailto:it22103222@my.sliit.lk">it22103222@my.sliit.lk</a>
+          </article>
+
+          <article class="team-card">
+            <div class="avatar">SE</div>
+            <h3>Sentheepan. E</h3>
+            <p>Student Researcher</p>
+            <a href="mailto:it22282590@my.sliit.lk">it22282590@my.sliit.lk</a>
+          </article>
+
+          <article class="team-card">
+            <div class="avatar">II</div>
+            <h3>Ilangeeran. I</h3>
+            <p>Student Researcher</p>
+            <a href="mailto:it22153104@my.sliit.lk">it22153104@my.sliit.lk</a>
+          </article>
+
+          <article class="team-card">
+            <div class="avatar">BJ</div>
+            <h3>Brinthapan. J</h3>
+            <p>Student Researcher</p>
+            <a href="mailto:it22123954S@my.sliit.lk">it22123954S@my.sliit.lk</a>
+          </article>
+        </div>
+
+        <div class="about-panels">
+          <article class="info-card">
+            <h3>Supervisors</h3>
+            <ul>
+              <li>Sanjeevi Chandrasiri</li>
+              <li>Karthiga Ranjedran</li>
+            </ul>
+          </article>
+
+          <article class="info-card">
+            <h3>Achievements</h3>
+            <ul>
+              <li>84% accuracy achieved in stuttering detection</li>
+              <li>Successful ASL translation for 20 phrases</li>
+              <li>Integrated multimodal support within one research platform</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="section-heading">
+          <p class="eyebrow">Contact Us</p>
+          <h2>Ask about the Storypal project</h2>
+          <p>
+            Use the inquiry form for project-related questions or contact the team directly through
+            their official SLIIT email addresses.
+          </p>
+        </div>
+
+        <div class="contact-layout">
+          <article class="contact-card">
+            <h3>Team Contacts</h3>
+            <ul class="contact-list">
+              <li><a href="mailto:it22103222@my.sliit.lk">it22103222@my.sliit.lk</a></li>
+              <li><a href="mailto:it22282590@my.sliit.lk">it22282590@my.sliit.lk</a></li>
+              <li><a href="mailto:it22153104@my.sliit.lk">it22153104@my.sliit.lk</a></li>
+              <li><a href="mailto:it22123954S@my.sliit.lk">it22123954S@my.sliit.lk</a></li>
+            </ul>
+          </article>
+
+          <form class="contact-form" id="contact-form">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required>
+            </label>
+
+            <label>
+              Email
+              <input type="email" name="email" placeholder="name@example.com" required>
+            </label>
+
+            <label>
+              Inquiry
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Ask a question about Storypal"
+                required
+              ></textarea>
+            </label>
+
+            <button class="button button-primary" type="submit">Send Inquiry</button>
+            <p class="form-status" id="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Storypal Research Project</p>
+      <p>Inclusive reading through AI-supported storytelling.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
